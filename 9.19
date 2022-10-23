@@ -1,0 +1,11 @@
+pair = input()
+last = []
+pair = pair.split()
+for i in pair:
+    pair2 = i.split(',')
+    for j in pair2:
+        last.append(j)
+name = input()
+for i,v in enumerate(last):
+    if name == v:
+        print(last[i+1])
